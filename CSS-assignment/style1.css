@@ -1,0 +1,33 @@
+.pricing-table { 
+  display: flex; 
+  gap: 20px; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+} 
+ 
+.card { 
+  border: 1px solid #ccc; 
+  padding: 20px; 
+  width: 250px; 
+  border-radius: 10px; 
+  text-align: center; 
+  transition: transform 0.3s; 
+} 
+ 
+.card:hover { 
+  transform: scale(1.05); 
+    box-shadow: 2px 2px 6px black; 
+} 
+ 
+ 
+.pro { 
+background-color: #fceabb; 
+border: 2px solid rgb(235, 171, 8); 
+} 
+
+@media (max-width: 600px) { 
+.pricing-table { 
+flex-direction: column; 
+align-items: center; 
+} 
+} 
