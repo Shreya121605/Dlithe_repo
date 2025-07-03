@@ -1,0 +1,15 @@
+import React from 'react';
+
+function ProductsList({ products }) {
+  return (
+    <div>
+      {products.map((p) => (
+        <div key={p.id}>
+          ID: {p.id} - Name: {p.name}
+        </div>
+      ))}
+    </div>
+  );
+}
+
+export default ProductsList;
